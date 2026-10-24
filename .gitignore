@@ -1,0 +1,21 @@
+# Whitelist: ignore EVERYTHING, then allow only code and documentation.
+# This way data files (raw EEG, logs with participant information, Tier 2,
+# results, checksums) can never be committed by accident, even if new
+# folders appear later.
+
+*
+!*/
+
+# allowed files
+!.gitignore
+!LICENSE
+!README.md
+!requirements.txt
+!*.py
+
+# never commit these, even though they match the rules above
+__pycache__/
+results/
+rebuilt_tier2/
+output/
+eeg_preprocess/output/

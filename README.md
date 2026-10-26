@@ -119,7 +119,7 @@ Writes to `results/`:
 
 | File | Content |
 |---|---|
-| `figure_technical_validation.png/.pdf` | Six-panel figure (Fig. 10 of the article) |
+| `figure_technical_validation.png/.pdf` | Six-panel figure (Fig. 11 of the article) |
 | `summary.txt` | All numbers reported in the Technical validation section |
 | `qc_windows_per_subject.csv` | (A) window completeness, sampling continuity, timestamp bursts |
 | `qc_channel_quality.csv`, `qc_channel_flag_rate.csv` | (B, C) PREP statistics and flags, amplitude, inferred gain |
@@ -128,7 +128,7 @@ Writes to `results/`:
 | `faster_window_flags.csv` | (F) percentage of outlier windows per recording |
 | `behavior_per_item.csv`, `behavior_summary.csv` | Task performance (accuracy, response time, unanswered items) |
 
-If `rebuilt_tier2/` exists, panel F uses the rebuilt files listed in its report. All analyses are descriptive; no
+Run Step 2 first: `technical_validation.py` reads `rebuilt_tier2/rebuild_report.csv` to know which recordings have reconstructed timing (panel A) and, for panel F, uses the rebuilt files listed there. All analyses are descriptive; no
 group comparison is tested.
 
 ### Criteria and sources

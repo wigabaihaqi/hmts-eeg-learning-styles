@@ -1,8 +1,8 @@
 # HMT-S EEG dataset: preprocessing and technical validation
 
 Code accompanying the data article *Raw and preprocessed electroencephalography dataset of verbal–visual and
-active–reflective learners during a short Hagen matrix-reasoning task* (Data in Brief, under review) and the dataset on
-Mendeley Data: `[dataset DOI]`.
+active–reflective learners during a short Hagen matrix-reasoning task* (manuscript in preparation) and the dataset on
+Mendeley Data: https://doi.org/10.17632/vt65n2ydpm.1.
 
 The code covers three steps:
 
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 ## Data
 
-1. Download the dataset from Mendeley Data (`[dataset DOI]`) and unzip it. It contains:
+1. Download the dataset from Mendeley Data (https://doi.org/10.17632/vt65n2ydpm.1) and unzip it. It contains:
 
    ```
    1. Raw EEG and Stimulus Logs/<class>/Subject N/SubjectN.csv, LS-Quiz-subjectN.xlsx
@@ -151,7 +151,13 @@ Every threshold is defined, with its source, in `config.py`.
 
 ## Citation
 
-If you use this code, please cite the data article and the dataset: `[citation to be added]`.
+If you use this code, please cite the dataset:
+
+> Baihaqi, W.M., Hidayah, I., Kusrohmaniah, S., Wijaya, A., Setiawan, N.A. (2026). Raw and Preprocessed EEG of
+> ILS-Screened Verbal–Visual and Active–Reflective Learners during the Short Hagen Matrices Test (HMT-S).
+> Mendeley Data, V1. https://doi.org/10.17632/vt65n2ydpm.1
+
+The citation of the associated data article will be added after publication.
 
 ## References
 
